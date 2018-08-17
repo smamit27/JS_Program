@@ -1,0 +1,136 @@
+<html> 
+    <head><title>Js Program</title></head>
+    <script>
+/* Make * in project 
+*****
+*****
+*****
+*****
+***** 
+*/
+for(var i =1;i<=5;i++) {
+    for(var j=1;j<=5;j++){
+        document.write("* ");
+    }
+    document.write("</br>");
+}
+/* Make pyramid in project 
+        *
+       * *
+      * * *
+    * * *  *
+  *  *  *  *  * 
+*/
+for(var i=1;i<=5;i++){
+    for(var k=1;k<=(5-i);k++){
+        document.write('&nbsp');
+    }
+    for(var j=1;j<=i;j++){
+        document.write("* ");
+    }
+    document.write('<br>');
+}
+/* Factorical */
+const factoricalNumber = (number) => {
+
+    var  count = 1;
+    for( var i= number ; i > 0;i--){
+         count = i * count;
+    }
+    document.write(count);
+
+}
+
+factoricalNumber(5);
+
+/* Prime Number */
+function isPrime(num) {
+  for(var i = 2; i < num; i++){
+    if(num % i === 0) {
+        return false;
+    }
+
+  }
+  return num !== 1;
+
+
+}
+isPrime(13);
+/* Prime Number */
+/* 37 QUESTION IN JS */
+function foo1()
+{
+  return {
+      bar: "hello"
+  }
+}
+
+function foo2()
+{
+  return
+  {
+      bar: "hello"
+  }
+}
+console.log("foo1 returns:");
+console.log(foo1());
+console.log("foo2 returns:");
+console.log(foo2());
+(function(){
+  var a = b = 3;
+})();
+console.log(typeof a);
+console.log(typeof b);
+console.log("a defined? " + (typeof a !== 'undefined'));
+console.log("b defined? " + (typeof b !== 'undefined'));
+
+/* reverse */ 
+var amit = 'how are you'
+var amit1 = amit.split('').reverse().join('');
+var count = 0;
+for(var i=0; i < amit1.length;i++){
+	if(amit1[i] == 'e'){
+	count++;
+}
+}
+console.log("e"+count);
+/* Reverse String */
+var stringReverse = 'sweta';
+var newStr = '';
+for(i = (stringReverse.length-1);i >= 0;i--){
+    newStr = newStr +stringReverse[i];
+}
+document.write('<br>')
+
+            document.write('<br>')
+
+document.write("Reverse==="+ newStr)
+document.write('<br>')
+
+
+
+// swap two numbers
+var x = 5;
+var y = 2;
+    x = y+x;
+    y = x-y;
+    x = x-y;
+    console.log('x'+ x);
+    console.log('y'+ y);
+
+    for(var counter =0; counter< 100 ;counter++){
+        var nonPrime = false;
+        for (var i = 2; i<= counter; i++) {
+            debugger;
+            if(counter%i == 0 &&  i!== counter){
+                nonPrime = true; 
+            }
+        }
+        if(nonPrime === false) {
+            document.write(counter);
+            document.write('<br>')
+        }
+    }
+
+    </script>
+</html>
